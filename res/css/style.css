@@ -1,0 +1,96 @@
+body{
+	background: url("../img/timesand.jpg");
+	background-size: cover; 
+	background-position: center;
+}
+
+html{
+	height: 100%;
+}
+
+#mainbox{
+	background-color: rgba(255,255,255, 0.5);
+	width: 35%;
+	min-width: 250px;
+	margin: 0 auto;
+	max-height: 600px;
+	overflow: auto;
+	box-shadow: 1px 1px 1px gray;
+
+}
+
+#app_name{
+	font-weight: normal;
+	color: white;
+	font-family: arkitech;
+	text-align: center;
+	margin: 0;
+	background-color: #222222;
+}
+
+input{
+	width: 100%;
+}
+
+#new_task_field{
+	background-color: rgba(0,0,0, 0.5);
+}
+
+#new_task_field:focus{
+	background-color: white;
+}
+form{
+	text-align: right;
+}
+
+#tsk_ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: georgia;
+	font-size: 18px;
+	text-transform: capitalize;
+
+}
+
+#tsk_ul li:nth-child(2n){
+	background-color: #f5f5f5;
+}
+
+#tsk_ul li{
+	height: 40px;
+	line-height: 40px;
+
+}
+
+.trash{
+	background-color: #E20917;
+	color: white;
+	width:0;
+	opacity: 0;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	transition: 0.2s linear ;
+}
+
+#tsk_ul li:hover span{
+	width: 40px;
+	opacity: 1;
+}
+
+.done{
+	text-decoration: line-through;
+	color: red;
+
+}
+
+
+
+button[id=add_task]{
+	display: none;
+}
+
+.hidebtn{
+	display: block;
+}
