@@ -74,6 +74,17 @@ form{
 	transition: 0.2s linear ;
 }
 
+.task_setting{
+	background-color: blue;
+	color: white;
+	width:0;
+	opacity: 0;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	transition: 0.2s linear ;
+}
+
 #tsk_ul li:hover span{
 	width: 40px;
 	opacity: 1;
