@@ -2,6 +2,7 @@ body{
 	background: url("../img/timesand.jpg");
 	background-size: cover; 
 	background-position: center;
+	overflow: hidden;
 }
 
 html{
@@ -144,7 +145,8 @@ button[id=add_task]{
 	width: 100%;
 	display: none;
 	opacity: 0;
-	transition: 0.2s linear;
+	padding-top: 10px;
+	transition: 1s ease;
 	
 
 	/*position: fixed;*/
@@ -168,9 +170,23 @@ button[id=add_task]{
 	border: thin solid white;
 	width: 80px;
 	margin: 0 5px;
-	
+
 }
 
+#set_options li:hover{
+background: white;
+color: #222222;
+}
+
+/*MODAL*/
+#my_modal p{
+	text-align: left;
+}
+
+.input-group-addon span{
+	width: 50px;
+	display: inline-block;
+}
 /*====================== HOMEPAGE ========================*/
 
 #main_ctn h1{

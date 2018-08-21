@@ -26,7 +26,10 @@ $("#tsk_ul").on("click", ".trash", function (e) {
 	})
 	e.stopPropagation();
 
-})
+});
+
+
+
 
 // COMPLETING A TASK
 $("#tsk_ul").on("dblclick", "li", function (e) {
@@ -34,7 +37,7 @@ $("#tsk_ul").on("dblclick", "li", function (e) {
 	e.stopPropagation();
 	console.log(this);
 
-})
+});
 
 //HIDING THE ADD BUTTON
 $("#new_task_field").focus(function(){
@@ -57,6 +60,16 @@ $('#myModal').on('hidden.bs.modal', function (e) {
 //TASK SETTING MODAL
 $("#tsk_ul").on("click", ".task_setting", function(e){
 
+		var tsk = $(this);
 		$('#my_modal').modal('show');
+
+		$("#tsk_del_btn").on("click", function (e) {
+		tsk.parent().fadeOut(500, function(){
+			$(this).remove();	
+			$('#my_modal').modal('hide');
+		})
 		e.stopPropagation();
+
+});
+
 });
