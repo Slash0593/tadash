@@ -29,7 +29,7 @@ $("#tsk_ul").on("click", ".trash", function (e) {
 })
 
 // COMPLETING A TASK
-$("#tsk_ul").on("click", "li", function (e) {
+$("#tsk_ul").on("dblclick", "li", function (e) {
 	$(this).toggleClass("done");
 	e.stopPropagation();
 	console.log(this);

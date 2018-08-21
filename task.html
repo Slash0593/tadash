@@ -26,10 +26,10 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="#">Task</a></li>
-              <li><a href="#">Schedule</a></li>
-              <li><a href="#">Calendar</a></li>
+              <li class="active"><a href="index.html">Accueil</a></li>
+              <li><a href="task.html">Tâches</a></li>
+              <li><a href="#">Emploi</a></li>
+              <li><a href="#">Calendrier</a></li>
               <!--<li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -44,9 +44,9 @@
               </li>-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Login</a></li>
+              <li><a href="#">Connexion</a></li>
               <li><a href="#">Contact</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="#">A-propos</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
@@ -54,40 +54,65 @@
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="" id="mainbox" class="col-lg-4">
-			<h1 id="app_name"> TASK </h1>
+    <div class="col-sm-12 col-md-6 col-lg-6 col-lg-offset-3 col-md-offset-3">
+      <div class="" id="mainbox" class=" ">
+      <h1 id="app_name"> TASK </h1>
 
-			<form class="form-horizontal " autocomplete="off" action="#">
-				<input type="text" id="new_task_field" name="new_task_field" class="form-control" placeholder="nouvelle tâche">
-				<button type="button" id="add_task" class="btn btn-success btn-block"> <i class="fa fa-plus"></i></button>
+      <form class="form-horizontal " autocomplete="off" action="#" onsubmit="return false">
+        <input type="text" id="new_task_field" name="new_task_field" class="form-control" placeholder="nouvelle tâche">
+        <button type="button" id="add_task" class="btn btn-success btn-block"> <i class="fa fa-plus"></i></button>
 
-			</form>
-			<ul id="tsk_ul">
-				<li > 
+      </form>
+      <ul id="tsk_ul">
+        <li > 
           <span class="trash"> <i class="fa fa-trash"></i></span>
           <span class="task_setting"> <i class="fa fa-cog"></i></span>
-           Reviser Javascript </span> 
+           Reviser Javascript 
         </li>
         <li > 
           <span class="trash"> <i class="fa fa-trash"></i></span>
           <span class="task_setting"> <i class="fa fa-cog"></i></span>
-           Appeler Massamba </span> 
-        </li>
-        <li > 
-            <span class="trash"> <i class="fa fa-trash"></i></span>
-            <span class="task_setting" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"> <i class="fa fa-cog"></i></span>
-            Faire exercise Télécoms </span> 
+           Appeler Massamba 
         </li>
         <li > 
             <span class="trash"> <i class="fa fa-trash"></i></span>
             <span class="task_setting"> <i class="fa fa-cog"></i></span>
-            Acheter connexion </span> 
+            Faire exercise Télécoms
         </li>
-	
-			</ul>
+        <li > 
+            <span class="trash"> <i class="fa fa-trash"></i></span>
+            <span class="task_setting"> <i class="fa fa-cog"></i></span>
+            Acheter connexion
+        </li>
+  
+      </ul>
+    </div>
+		
 		</div>
 	</div>
 </div>
+
+<!-- TASK SETTINGS BAR -->
+<div class="" >
+  <div id="task_set_container" class="">
+    <div id="show_setting_bar">
+       <span><i class="fa fa-"></i>+</span>
+    </div>
+    <div id="task_setting_bar" >
+     
+      <div id="set_options">
+        <ul>
+          <li> <span><i class="fa fa-plus"></i></span></li>
+          <li> <span><i class="fa fa-star"></i></span></li>
+          <li> <span><i class="fa fa-cogs"></i></span></li>
+          <li> <span><i class="fa fa-file"></i></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
 <!-- TASK SETTING MODAL -->
 
