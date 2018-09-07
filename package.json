@@ -1,0 +1,34 @@
+{
+  "name": "tadash",
+  "version": "1.0.0",
+  "description": "a nodejs web app for daily task management and scheduling",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/absicamara/tadash.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "web",
+    "app",
+    "task",
+    "management",
+    "express",
+    "ejs"
+  ],
+  "author": "aboubacar sidiki camara aka absi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/absicamara/tadash/issues"
+  },
+  "homepage": "https://github.com/absicamara/tadash#readme"
+}
