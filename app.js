@@ -15,6 +15,8 @@ app.get("/task", function(req, res){
 })
 
 
-app.listen(55, function () {
+var port = process.env.PORT || 8080
+
+app.listen(port, function () {
 	console.log("Server started");
 });
