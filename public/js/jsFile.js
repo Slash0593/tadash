@@ -2,7 +2,7 @@
 $("#add_task").on("click",function () {
 	if($("#new_task_field").val() != ""){
 		var tsk = $("#new_task_field").val();
-		$("#tsk_ul").append("<li> <span class='trash'> <i class='fa fa-trash'> </i></span> <span class='task_setting'> <i class='fa fa-cog'></i></span> "+ tsk +"</li>");
+		$("#tsk_ul").append("<li> <span id='checker' class='task_checker'> <i class='fa fa-check'></i></span> <span class='trash'> <i class='fa fa-trash'> </i></span> <span class='task_setting'> <i class='fa fa-cog'></i></span> "+ tsk +"</li>");
 		$("#new_task_field").val("");
 	}
 	
@@ -14,8 +14,8 @@ $("#new_task_field").on("keypress", function (e) {
 		if (e.which === 13) {
 		var tsk = $("#new_task_field").val();
 		$("#new_task_field").val("");
-		$("#tsk_ul").append("<li> <span class='trash'> <i class='fa fa-trash'> </i></span> <span class='task_setting'> <i class='fa fa-cog'></i></span> "+ tsk +"</li>");
-		}
+		$("#tsk_ul").append("<li> <span id='checker' class='task_checker'> <i class='fa fa-check'></i></span> <span class='trash'> <i class='fa fa-trash'> </i></span> <span class='task_setting'> <i class='fa fa-cog'></i></span> "+ tsk +"</li>");
+		};
 	}
 });
 
@@ -32,8 +32,8 @@ $("#tsk_ul").on("click", ".trash", function (e) {
 
 
 // COMPLETING A TASK
-$("#tsk_ul").on("dblclick", "li", function (e) {
-	$(this).toggleClass("done");
+$("#tsk_ul").on("click", ".task_checker", function (e) {
+	$(this).parent().toggleClass("done");
 	e.stopPropagation();
 	console.log(this);
 

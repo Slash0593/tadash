@@ -92,6 +92,17 @@ form{
 	transition: 0.2s linear ;
 }
 
+.task_checker{
+	background-color: green;
+	color: white;
+	width:0;
+	opacity: 0;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	transition: 0.2s linear ;
+}
+
 #tsk_ul li:hover span{
 	width: 40px;
 	opacity: 1;
@@ -176,6 +187,12 @@ button[id=add_task]{
 #set_options li:hover{
 background: white;
 color: #222222;
+}
+
+
+/*CHECKER*/
+#checker{
+	background-color: green: 
 }
 
 /*MODAL*/
