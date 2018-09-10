@@ -33,9 +33,9 @@ form input{
 	width: 100%;
 }
 
-#tsk_ul li::selection{
+/*#tsk_ul li::selection{
 	background-color: transparent;
-}
+}*/
 
 #new_task_field{
 	background-color: rgba(0,0,0, 0.5);
