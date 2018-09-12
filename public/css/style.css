@@ -201,7 +201,7 @@ color: #222222;
 }
 
 .input-group-addon span{
-	width: 50px;
+	width: 55px;
 	display: inline-block;
 }
 /*====================== HOMEPAGE ========================*/
@@ -241,4 +241,50 @@ color: #222222;
 	color: black;
 	transition: 0.5s ease;
 	text-decoration: none;
+}
+
+/*============SIGNING IN======================*/
+#mainFormBox{
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 2%;
+	text-align: center;
+}
+
+#formContainer{
+	padding: 0 10%;
+}
+
+#mainFormBox input{
+	/*width: 90px;*/
+	/*background: rgba(0,0,0, 0.5);*/
+}
+
+#pwd2, #pwd{
+	/*width: 70%;*/
+}
+
+#signInHeader{
+	background-color: black;
+	color: white;
+	margin-top: 3%;
+	text-align: center;
+	padding-top: 1%;
+}
+
+#signInFooter{
+	background-color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	display: block;
+}
+
+#signInFooter input{
+	display: inline-block;
+	width: 100px;
+	padding-bottom: 1%;
+}
+
+#signInFooter a{
+	display: inline-block;
+	width: 120px;
+	font-size: 15px;
 }

@@ -14,6 +14,12 @@ app.get("/task", function(req, res){
 	res.render("task");
 })
 
+// SIGNIN PAGE
+
+app.get("/signIn", function (req, res) {
+	res.render("signin");
+});
+
 
 var port = process.env.PORT || 8080
 
